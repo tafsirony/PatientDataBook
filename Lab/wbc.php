@@ -223,11 +223,17 @@
                         
                                         </div>
 										<div class="panel-body">
-                            <p>
+
+							<div class="form-group">
+							<label> Upload </label>
+							<input type="file">
+							                            <p>
                                 
                                 <button type="button" class="btn btn-primary">Save</button>
                                 
                             <br>
+							</p>
+							
 
                             </p>
                         </div>
