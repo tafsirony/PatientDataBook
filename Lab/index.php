@@ -178,7 +178,7 @@
 	  <div class="panel-body">
                             <p>
                                 
-                                <button type="button" class="btn btn-primary" onclick="location.href='/wbc.php';">New Report </button>
+                                <button type="button" class="btn btn-primary" onclick="location.href='../Lab//wbc.php';">New Report </button>
                                 
                             <br>
 
