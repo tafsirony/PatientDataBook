@@ -1,0 +1,101 @@
+drop table If Exists Medicine;
+drop table If Exists Appoinment;
+drop table If Exists Test_Writen;
+drop table If Exists Test_pdf;
+drop table If Exists PRESCRIPTION;
+drop table If Exists TEST;
+drop table If Exists PATIENT;
+drop table If Exists Labrotorian;
+drop table If Exists DOCTOR;
+
+CREATE TABLE DOCTOR (
+  D_Id INT NOT NULL PRIMARY KEY,
+  D_Name varchar(10) NOT NULL,
+  D_Degree varchar(20) NOT NULL,
+  D_Speciality varchar(20) NOT NULL,
+  D_VistingHour varchar(20) NOT NULL,
+  D_Mail_Id varchar(20) ,
+  D_appoinmentNo varchar(20) NOT NULL
+);
+
+CREATE TABLE PATIENT (
+  P_Id INT NOT NULL PRIMARY KEY,
+  P_Name varchar(20) NOT NULL,
+  D_Id INT NOT NULL,
+  P_Age varchar(20) NOT NULL,
+  P_Gender varchar(20) NOT NULL,
+  P_Weight varchar(20) NOT NULL,
+  P_PhnNo varchar(20) NOT NULL,
+  P_History varchar(20) NOT NULL,
+  P_Mail_Id varchar(20) ,
+  FOREIGN kEY (D_Id) REFERENCES DOCTOR(D_Id)
+);
+
+CREATE TABLE Labrotorian (
+  L_Id INT NOT NULL PRIMARY KEY,
+  L_Name varchar(20)
+);
+
+CREATE TABLE TEST (
+  T_Id INT NOT NULL PRIMARY KEY,
+  T_Name varchar(20),
+  T_DiagnosisCentre varchar(20),
+  P_Id INT,
+  D_Id INT,
+  L_Id INT ,
+  FOREIGN kEY (L_Id) REFERENCES Labrotorian(L_Id),
+  FOREIGN kEY (P_Id) REFERENCES PATIENT(P_Id),
+  FOREIGN kEY (D_Id) REFERENCES DOCTOR(D_Id)
+  
+);
+
+CREATE TABLE Test_Writen (
+  Test_type varchar(20),
+  TW_Normal varchar(20),
+  TW_Abnormal varchar(20),
+  TW_Flag varchar(20),
+  TW_Reference_Range varchar(20),
+  T_Id INT,
+  Tw_Date varchar(20),
+  FOREIGN kEY (T_Id) REFERENCES TEST(T_Id)   
+);
+
+CREATE TABLE Test_pdf (
+  Test_Type varchar(20),
+  Test_name varchar(20),
+  TP_LInk varchar(20),
+  T_Id INT,
+  Tp_Date varchar(20),
+  FOREIGN kEY (T_Id) REFERENCES TEST(T_Id)
+);
+
+CREATE TABLE PRESCRIPTION (
+  Pr_Id varchar(20) NOT NULL PRIMARY KEY,
+  D_Id INT,
+  T_Id INT,
+  P_Id INT,
+  Pr_Data varchar(20),
+  Pr_Advise varchar(20),
+  Pr_Date varchar(20),
+  FOREIGN kEY (P_Id) REFERENCES PATIENT(P_Id),
+  FOREIGN kEY (D_Id) REFERENCES DOCTOR(D_Id),
+  FOREIGN kEY (T_Id) REFERENCES TEST(T_Id)
+);
+
+CREATE TABLE Medicine (
+  M_Name varchar(20) NOT NULL,
+  M_Quantity varchar(20) NOT NULL ,
+  M_Time varchar(20),
+  M_Timeline varchar(20),
+    Pr_Id INT NOT NULL ,
+  FOREIGN kEY (Pr_Id) REFERENCES PRESCRIPTION(Pr_Id)
+);
+
+CREATE TABLE Appoinment (   
+  D_Id INT,
+  P_Id INT,
+  Last_A_Date varchar(20),
+  Next_A_Date varchar(20),
+  FOREIGN kEY (P_Id) REFERENCES PATIENT(P_Id),
+  FOREIGN kEY (D_Id) REFERENCES DOCTOR(D_Id)
+);
