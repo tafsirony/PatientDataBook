@@ -33,17 +33,17 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Prescriptions</span>
-          </a>
-        </li>
-
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="reports.html">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Reports</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="prescription.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Prescriptions</span>
           </a>
         </li>
 		
@@ -53,7 +53,9 @@
             <span class="nav-link-text">Treatment</span>
           </a>
         </li>
-      </ul>
+		
+		</ul>
+	
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
@@ -160,26 +162,68 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
+	
+	<!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Prescriptions</li>
+        <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
+	  
+	  
+      
       <!-- Example DataTables Card-->
+	  
+	  
+	  
+	  
+	  <div class="panel-body">
+                            <p>
+                                
+                                <button type="button" class="btn btn-primary">New Patient</button>
+                                
+                            <br>
+
+                            </p>
+                        </div>
+						
+						
+						
+						
+						 
+	  
+	  <div class="text-left">
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table"></i> Prescriptions</div>
+          <i class="fa fa-table"></i>Today's Medicine</div>
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table table-bordered" width="100%" cellspacing="0">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
-                  <tr>
+                <tr>
                       <th>Medicine Name</th>
-                      <th>Quantity</th>
+                      <th>Reamaining Qty</th>
                       <th>Time</th>
-                      <th>Timeline</th>
+                      <th>Checkin</th>
                   </tr>
               </thead>
               <tbody>
@@ -187,65 +231,67 @@
                       <td>Napa</td>
                       <td>10</td>
                       <td>1-1-1</td>
-                      <td>10</td>
+                      <td><input type="checkbox"></td>
                   </tr>
                   <tr>
                     <td>Pantonix</td>
                     <td>14</td>
                     <td>0-0-1</td>
-                    <td>10</td>
+                    <td><input type="checkbox"></td>
                   </tr>
                   <tr>
                     <td>Antacid</td>
                     <td>16</td>
                     <td>1-0-1</td>
-                    <td>10</td>
+                    <td><input type="checkbox"></td>
                   </tr>
                   <tr>
                     <td>Zolium</td>
                     <td>10</td>
                     <td>0-0-1</td>
-                    <td>10</td>
+                    <td><input type="checkbox"></td>
                   </tr>
 
-				<p>
-                                
-                                <button type="button" class="btn btn-primary">Edit Prescription</button>
-                                
-                            <br>
-
-                            </p>
-							
               </tbody>
             </table>
           </div>
-          <div>
-            <legend>Suggestion</legend>
-            <textarea disabled></textarea>
+		  
+		  </tbody>
+            </table>
           </div>
-		  <div class="panel-body">
+         
                             <p>
                                 
-                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-primary">Add Medicine</button>
                                 
                             <br>
 
                             </p>
                         </div>
-          <ul class="pager">
-             <li class="previous"><a href="#">Previous</a></li>
-             <li class="next"><a href="#">Next</a></li>
-            </ul>
-      </div>
+        
+		  
+		  
+		  
+		  
+		  </tbody>
+            </table>
+          </div>
+          <div class="text-right">
+              <a href="#">View All Prescriptions <i class="fa fa-arrow-circle-left"></i></a>
+          </div>
         </div>
+        <div class="card-footer small text-muted">Next Appointment in 23 Days with Dr.Shahriar Ruhul</div>
       </div>
     </div>
+	
+	
+	
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright © DoctorDataBook 2017</small>
+          <small>Copyright ©Doctor Data Book 2017</small>
         </div>
       </div>
     </footer>
@@ -277,13 +323,19 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
   </div>
 </body>
+
+
+
+
 
 </html>
