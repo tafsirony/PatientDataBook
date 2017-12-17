@@ -16,6 +16,19 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -197,81 +210,106 @@
 	  
 	  
 	  <div class="panel-body">
-                            <p>
+                            
                                 
-                                <button type="button" class="btn btn-primary">New Patient</button>
+<ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <button type="button" class="btn btn-primary">New Patient</button>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                 <!-- /.row -->
+								 
+								 <div>
+      
+            <div class="row">
+			
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            New Patient Info
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Last Name</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        <div class="form-group">
+                                            <label>Mail Id</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Age</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        </div>
+										<div class="form-group">
+                                            <label>Gender</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        </div>
+										<div class="form-group">
+                                            <label>Blood Group</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-default">Submit Button</button>
+                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                    </form>
+                                </div>
+                    </ul>
                                 
                             <br>
+							
 
-                            </p>
+                            
                         </div>
+						
+						
+						
+						 <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Patient Id</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Patient Id" name="email" type="email" autofocus>
+                                </div>
+                               
+                                
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="index.html" class="btn btn-lg btn-success btn-block">Search</a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 						
 						
 						
 						
 						 
 	  
-	  <div class="text-left">
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-table"></i>Today's Medicine</div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              <thead>
-                <tr>
-                      <th>Medicine Name</th>
-                      <th>Reamaining Qty</th>
-                      <th>Time</th>
-                      <th>Checkin</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>Napa</td>
-                      <td>10</td>
-                      <td>1-1-1</td>
-                      <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td>Pantonix</td>
-                    <td>14</td>
-                    <td>0-0-1</td>
-                    <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td>Antacid</td>
-                    <td>16</td>
-                    <td>1-0-1</td>
-                    <td><input type="checkbox"></td>
-                  </tr>
-                  <tr>
-                    <td>Zolium</td>
-                    <td>10</td>
-                    <td>0-0-1</td>
-                    <td><input type="checkbox"></td>
-                  </tr>
-
-              </tbody>
-            </table>
-          </div>
-		  
-		  </tbody>
-            </table>
-          </div>
-         
-                            <p>
-                                
-                                <button type="button" class="btn btn-primary">Add Medicine</button>
-                                
-                            <br>
-
-                            </p>
-                        </div>
-        
-		  
-		  
-		  
+	 
 		  
 		  </tbody>
             </table>
