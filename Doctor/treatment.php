@@ -12,6 +12,8 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
 </head>
@@ -24,36 +26,36 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="index.html">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-            <a class="nav-link" href="prescription.html">
-              <i class="fa fa-fw fa-table"></i>
-              <span class="nav-link-text">Prescriptions</span>
-            </a>
-          </li>
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="reports.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Reports</span>
+          </a>
+        </li>
 
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="reports.html">
-              <i class="fa fa-fw fa-area-chart"></i>
-              <span class="nav-link-text">Reports</span>
-            </a>
-          </li>
-		  
-		  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="treatment.html">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="prescription.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Prescriptions</span>
+          </a>
+        </li>
+		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="treatment.php">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Treatment</span>
           </a>
         </li>
-
-        </ul>
-
+		
+		</ul>
+	
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
@@ -160,106 +162,158 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
+	
+	<!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Reports</li>
+        <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-      <!-- Area Chart Example-->
-      <div class="card mb-3" >
-        <div class="card-header">
-          <i class="fa fa-table"></i> Reports</div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered"  id="dataTable" width="100%" cellspacing="0">
+	  
+	  <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Treatment
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Chief Complain</label>
+                                           <input class="form-control" placeholder="Enter text">
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Present Illness</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Family History</label>
+											<input class="form-control" placeholder="Enter text">
+                        
+                                        </div>
+										<div class="form-group">
+                                            <label>Menstrual History</label>
+											<input class="form-control" placeholder="Enter text">
+                        
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Drug History</label>
+											<input class="form-control" placeholder="Enter text">
+                        
+                                        </div>
+										<div class="form-group">
+                                            <label>Immunization History</label>
+											<input class="form-control" placeholder="Enter text">
+                        
+                                        </div>
+
+</form></div>
+</div>
+</div>			
+</div>							
+				</div>		
+</div>
+
+
+
+<div class="table-responsive">
+            <div>		
+
+	  
+	  </div><table class="table table-bordered" width="100%" cellspacing="0">
               <thead>
                   <tr>
-                      <th>Report Name</th>
-                      <th>Test Name</th>
-                      <th>Status</th>
-                      <th>Normal</th>
-                      <th>Abnormal</th>
-                      <th>Flag</th>
-                      <th>Units</th>
-                      <th>Reference</th>
-                      <th>Date</th>
-                      <th>Test GIven by</th>
-                      <th>Detail</th>
-
+                      <th>Medicine Name</th>
+                      <th>Quantity</th>
+                      <th>Time</th>
+                      <th>Timeline</th>
                   </tr>
               </thead>
               <tbody>
                   <tr>
-                      <td>Blood Test</td>
-                      <td>WBC</td>
-                      <td>D</td>
-                      <td>10</td>
-                      <td>90</td>
-                      <td>G</td>
-                      <td>45ml</td>
-                      <td>JHAS</td>
-                      <td>1/9/2017</td>
-                      <td>Dr.Asok saodj</td>
-                      <td><a href = bloodtest.jpg><button>View</button></td></a>
-
+                      <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
                   </tr>
                   <tr>
-                    <td>Blood Test</td>
-                    <td>CBC</td>
-                    <td>D</td>
-                    <td>10</td>
-                    <td>90</td>
-                    <td>G</td>
-                    <td>45ml</td>
-                    <td>JHAS</td>
-                    <td>1/9/2017</td>
-                    <td>Dr.Asok saodj</td>
-                      <td><a href = bloodtest.jpg><button>View</button></td></a>
+                    <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
                   </tr>
                   <tr>
-                    <td>Blood Test</td>
-                    <td>RBC</td>
-                    <td>D</td>
-                    <td>10</td>
-                    <td>90</td>
-                    <td>G</td>
-                    <td>45ml</td>
-                    <td>JHAS</td>
-                    <td>1/9/2017</td>
-                    <td>Dr.Asok saodj</td>
-                    <td><a href = bloodtest.jpg><button>View</button></td></a>
+                    <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
                   </tr>
                   <tr>
-                    <td>Blood Test</td>
-                    <td>Hemoglobin</td>
-                    <td>D</td>
-                    <td>10</td>
-                    <td>90</td>
-                    <td>G</td>
-                    <td>45ml</td>
-                    <td>JHAS</td>
-                    <td>1/9/2017</td>
-                    <td>Dr.Asok saodj</td>
-                    <td><a href = bloodtest.jpg><button>View</button></td></a>
+                    <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
+                     <td><input type="text"></td>
                   </tr>
 
-
-              </tbody>
-            </table>
-          </div>
-		  
-		  </tbody>
-            </table>
-          </div>
-		  
-		 
-          <div>
-            <legend>Suggestion</legend>
+				
+				</tbody>	
+				<div>
+            <legend>Labratory Investigation</legend>
             <textarea enabled></textarea>
           </div>
-		  <div class="panel-body">
+										
+                    
+
+ 	  
+
+
+   </table></div>
+<div>		 
+						
+				<p>
+                                
+                                <button type="button" class="btn btn-primary">Add Medicine</button>
+                                
+                            <br>
+
+                            </p>
+							
+							</div>
+							
+	  
+	  
+	  
+							<div class="panel-body">
                             <p>
                                 
                                 <button type="button" class="btn btn-primary">Save</button>
@@ -267,62 +321,20 @@
                             <br>
 
                             </p>
-                        </div>
-		  
-		  
-
-          <ul class="pager">
-             <li class="previous"><a href="#">Previous</a></li>
-             <li class="next"><a href="#">Next</a></li>
-            </ul>
-      </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
+	  </div>
+	  
+	  
+	  
+	  </div>
+	  
+	  <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
           <small>Copyright © DoctorDataBook 2017</small>
         </div>
       </div>
     </footer>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
-    <!-- Custom scripts for this page-->
-    <script src="js/sb-admin-charts.min.js"></script>
-  </div>
+	   
 </body>
 
-</html>
+</html>   

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
 
+                                        session_start();
+?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,15 +36,9 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Prescriptions</span>
-          </a>
-        </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="reports.html">
+          <a class="nav-link" href="reports.php">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Reports</span>
           </a>
@@ -188,6 +185,7 @@
 
                                    <?php
                                      $email=$_POST['email'];
+                                     include "value.php";
                                      include "getPrescription.php";
 
                                        ?>
