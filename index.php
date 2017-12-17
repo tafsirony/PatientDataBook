@@ -42,7 +42,7 @@
               //<a class="btn btn-primary btn-block" href="index.php">Login</a>
             // '/opt/lampp/htdocs/PatientDataBook/DB/login_data.php';
           ?>
-          //<input type="submit">
+          <input type="submit">
           <a class="btn btn-primary btn-block" href="login_data.php">Login</a>
         </form>
 
