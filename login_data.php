@@ -1,5 +1,6 @@
 <html>
 <?php
+echo "<p>hello</p>";
 $servername = "localhost";
 $username = "root";
 $password = "";

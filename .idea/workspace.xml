@@ -4,7 +4,9 @@
     <list default="true" id="b9b13240-3778-4bf0-b443-67ade65db1aa" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/Doctor/prescription.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doctor/getPrescription.php" afterPath="$PROJECT_DIR$/Doctor/getPrescription.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doctor/index.html" afterPath="$PROJECT_DIR$/Doctor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doctor/prescription.php" afterPath="$PROJECT_DIR$/Doctor/prescription.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_data.php" afterPath="$PROJECT_DIR$/login_data.php" />
     </list>
@@ -23,8 +25,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state relative-caret-position="217">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -33,8 +35,8 @@
       <file leaf-file-name="login_data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="13">
+              <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -43,8 +45,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Doctor/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="299" column="33" lean-forward="false" selection-start-line="299" selection-start-column="33" selection-end-line="299" selection-end-column="33" />
+            <state relative-caret-position="177">
+              <caret line="289" column="80" lean-forward="false" selection-start-line="289" selection-start-column="80" selection-end-line="289" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -53,8 +55,8 @@
       <file leaf-file-name="prescription.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Doctor/prescription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state relative-caret-position="377">
+              <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -63,8 +65,38 @@
       <file leaf-file-name="getPrescription.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Doctor/getPrescription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reports.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Doctor/reports.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="231" column="39" lean-forward="true" selection-start-line="231" selection-start-column="39" selection-end-line="231" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_data.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB/login_data.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -77,6 +109,8 @@
       <find>index</find>
       <find>sea</find>
       <find>//</find>
+      <find>post</find>
+      <find>login</find>
       <find>search</find>
     </findStrings>
   </component>
@@ -95,6 +129,7 @@
         <option value="$PROJECT_DIR$/login_data.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Doctor/index.html" />
+        <option value="$PROJECT_DIR$/Doctor/prescription.php" />
         <option value="$PROJECT_DIR$/Doctor/getPrescription.php" />
       </list>
     </option>
@@ -137,6 +172,11 @@
             <path>
               <item name="PatientDataBook" type="b2602c69:ProjectViewProjectNode" />
               <item name="PatientDataBook" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PatientDataBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PatientDataBook" type="462c0819:PsiDirectoryNode" />
               <item name="Doctor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -175,12 +215,12 @@
       <updated>1513008398159</updated>
       <workItem from="1513008399632" duration="9671000" />
       <workItem from="1513081237241" duration="820000" />
-      <workItem from="1513531232710" duration="5455000" />
+      <workItem from="1513531232710" duration="12625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15946000" />
+    <option name="totallyTimeSpent" value="23116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="726" extended-state="6" />
@@ -247,7 +287,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -325,6 +365,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -332,6 +373,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -354,13 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
           <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="44" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -401,7 +436,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -430,14 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/login_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Doctor/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -446,42 +473,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_data.php">
+    <entry file="file://$PROJECT_DIR$/DB/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="7" />
+        <state relative-caret-position="172">
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/login_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doctor/reports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="231" column="39" lean-forward="true" selection-start-line="231" selection-start-column="39" selection-end-line="231" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="217">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Doctor/getPrescription.php">
+    <entry file="file://$PROJECT_DIR$/login_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="13">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctor/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="299" column="33" lean-forward="false" selection-start-line="299" selection-start-column="33" selection-end-line="299" selection-end-column="33" />
+        <state relative-caret-position="177">
+          <caret line="289" column="80" lean-forward="false" selection-start-line="289" selection-start-column="80" selection-end-line="289" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doctor/getPrescription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctor/prescription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        <state relative-caret-position="377">
+          <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
           <folding />
         </state>
       </provider>

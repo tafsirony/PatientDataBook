@@ -182,31 +182,16 @@
                       <th>Timeline</th>
                   </tr>
               </thead>
+
+
               <tbody>
-                  <tr>
-                      <td>Napa</td>
-                      <td>10</td>
-                      <td>1-1-1</td>
-                      <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>Pantonix</td>
-                    <td>14</td>
-                    <td>0-0-1</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>Antacid</td>
-                    <td>16</td>
-                    <td>1-0-1</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>Zolium</td>
-                    <td>10</td>
-                    <td>0-0-1</td>
-                    <td>10</td>
-                  </tr>
+
+                                   <?php
+                                     $email=$_POST['email'];
+                                     include "getPrescription.php";
+
+                                       ?>
+              </tbody>
 
 				<p>
                                 
@@ -216,7 +201,7 @@
 
                             </p>
 							
-              </tbody>
+
             </table>
           </div>
           <div>
