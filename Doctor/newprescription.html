@@ -33,17 +33,17 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="reports.html">
-            <i class="fa fa-fw fa-area-chart"></i>
-            <span class="nav-link-text">Reports</span>
-          </a>
-        </li>
-
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="prescription.html">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Prescriptions</span>
+          </a>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="reports.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Reports</span>
           </a>
         </li>
 		
@@ -53,9 +53,7 @@
             <span class="nav-link-text">Treatment</span>
           </a>
         </li>
-		
-		</ul>
-	
+      </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
@@ -162,97 +160,40 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-	
-	<!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
+        <li class="breadcrumb-item active">Prescriptions</li>
       </ol>
-	  
-	  <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Treatment
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label>Chief Complain</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Present Illness</label>
-                                            <input class="form-control" placeholder="Enter text">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Family History</label>
-											<input class="form-control" placeholder="Enter text">
-                        
-                                        </div>
-										<div class="form-group">
-                                            <label>Menstrual History</label>
-											<input class="form-control" placeholder="Enter text">
-                        
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Drug History</label>
-											<input class="form-control" placeholder="Enter text">
-                        
-                                        </div>
-										<div class="form-group">
-                                            <label>Immunization History</label>
-											<input class="form-control" placeholder="Enter text">
-                        
-                                        </div>
-
-</form></div>
-</div>
-</div>			
-</div>							
-				</div>		
-</div>
-
-
-
-<div class="table-responsive">
-            <div>		
-
-	  
-	  </div><table class="table table-bordered" width="100%" cellspacing="0">
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Prescriptions</div>
+<div class="card-body">
+          <div class="table-responsive">
+           <a class="scroll-to-top rounded" href="#page-top" style="display: none;">
+      <i class="fa fa-angle-up"></i>
+    </a><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div><table class="table table-bordered" width="100%" cellspacing="0">
               <thead>
-                  <tr>
+                 <tr>
                       <th>Medicine Name</th>
                       <th>Quantity</th>
                       <th>Time</th>
@@ -288,29 +229,44 @@
 				
 				</tbody>	
 				
-										
-                    
-
- 	  
-
-
-   </table></div>
-<div>		 
-						
-				<p>
-                                
-                                <button type="button" class="btn btn-primary">Add Medicine</button>
-                                
-                            <br>
-
-                            </p>
-							
-							</div>
 							
 	  
 	  
 	  
-							<div class="panel-body">
+							
+				 
+          
+		  
+          
+      
+        
+      
+    
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    
+    <!-- Scroll to Top Button-->
+    
+    <!-- Logout Modal-->
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  
+
+
+
+</table></div>
+<div class="panel-body">
                             <p>
                                 
                                 <button type="button" class="btn btn-primary">Save</button>
@@ -318,8 +274,63 @@
                             <br>
 
                             </p>
-	  </div></div>
-	   
+	  <div>		 
+						
+				<p>
+                                
+                                <button type="button" class="btn btn-primary">Edit Prescription</button>
+                                
+                            <br>
+
+                            </p>
+							
+							</div></div></div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © DoctorDataBook 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  </div>
 </body>
 
-</html>   
+</html>
