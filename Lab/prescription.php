@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
- <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -16,24 +16,12 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-  
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.php">DoctorDataBook</a>
+    <a class="navbar-brand" href="index.php">PatientDataBook</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,20 +33,21 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="prescription.php">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Prescriptions</span>
+          </a>
+        </li>
+
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="reports.php">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Reports</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Prescriptions</span>
-          </a>
-        </li>
-		</ul>
 
+      </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
@@ -165,160 +154,92 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-	
-	<!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-			
-   <!-- Breadcrumbs-->
+      <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
+        <li class="breadcrumb-item active">Prescriptions</li>
       </ol>
-	  
-	  
-      
       <!-- Example DataTables Card-->
-	  
-	  
-	  
-	  
-	  <div class="panel-body">
-                            
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Prescriptions</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" width="100%" cellspacing="0">
+              <thead>
+                  <tr>
+                      <th>Medicine Name</th>
+                      <th>Quantity</th>
+                      <th>Time</th>
+                      <th>Timeline</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Napa</td>
+                      <td>10</td>
+                      <td>1-1-1</td>
+                      <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Pantonix</td>
+                    <td>14</td>
+                    <td>0-0-1</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Antacid</td>
+                    <td>16</td>
+                    <td>1-0-1</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Zolium</td>
+                    <td>10</td>
+                    <td>0-0-1</td>
+                    <td>10</td>
+                  </tr>
+
+				<p>
                                 
-<ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <button type="button" class="btn btn-primary">New Patient</button>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <a href="#">
-                                 <!-- /.row -->
-								 
-								 <div>
-								 
-								 
-								 
-      
-            <div class="row">
-			
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            New Patient Info
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                            <label>User Name</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        <div class="form-group">
-                                            <label>Mail Id</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Age</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-										
-							
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
-                                    </form>
-                                </div>
-                    </ul>
+                                <button type="button" class="btn btn-primary">Edit Prescription</button>
                                 
                             <br>
-							
-							
 
-                            
-                        </div>
-						
-						
-						
-						
-						 <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Search Patient Id</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Patient Id" name="email" type="email" autofocus>
-                                </div>
-                               
-                                
-                                <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Search</a>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-						
-						
-						
-						
-						 
-	  
-	 
-		  
-		  </tbody>
+                            </p>
+							
+              </tbody>
             </table>
           </div>
-          <div class="text-right">
-              <a href="#">View All Prescriptions <i class="fa fa-arrow-circle-left"></i></a>
+          <div>
+            <legend>Suggestion</legend>
+            <textarea disabled></textarea>
           </div>
+		  <div class="panel-body">
+                            <p>
+                                
+                                <button type="button" class="btn btn-primary">Save</button>
+                                
+                            <br>
+
+                            </p>
+                        </div>
+          <ul class="pager">
+             <li class="previous"><a href="#">Previous</a></li>
+             <li class="next"><a href="#">Next</a></li>
+            </ul>
+      </div>
         </div>
-        <div class="card-footer small text-muted">Next Appointment in 23 Days with Dr.Shahriar Ruhul</div>
       </div>
     </div>
-	
-	
-	
-	
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright ©Doctor Data Book 2017</small>
+          <small>Copyright © DoctorDataBook 2017</small>
         </div>
       </div>
     </footer>
@@ -350,19 +271,13 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
   </div>
 </body>
-
-
-
-
 
 </html>
