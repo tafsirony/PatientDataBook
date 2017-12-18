@@ -31,12 +31,7 @@
               <span class="nav-link-text">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-            <a class="nav-link" href="prescription.php">
-              <i class="fa fa-fw fa-table"></i>
-              <span class="nav-link-text">Prescriptions</span>
-            </a>
-          </li>
+          
 
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
             <a class="nav-link" href="reports.php">
@@ -250,7 +245,7 @@
 		  <div class="panel-body">
                             <p>
                                 
-                                <a href="wbc.php"><button type="button" class="btn btn-primary">Add New Report</button></a>
+                                <a href="wbc.php"><button type="button" class="btn btn-primary">Add New Report</button>
                                  
                             <br>
 

@@ -55,12 +55,6 @@
           </a>
         </li>
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.php">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Prescriptions</span>
-          </a>
-        </li>
 		
 		
 		</ul>
@@ -215,7 +209,7 @@
                         <h3 class="panel-title">Search Patient Id</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" method="post" action="prescription.php">
+                        <form role="form" method="post" action="reports.php">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Patient Id" name="email" type="email" method="post" autofocus>
@@ -223,7 +217,7 @@
                                
                                 
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="prescription.php" class="btn btn-lg btn-success btn-block">Search</a>
+                                <a href="reports.php" class="btn btn-lg btn-success btn-block">Search</a>
                             </fieldset>
                         </form>
                     </div>
