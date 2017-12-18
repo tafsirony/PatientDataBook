@@ -21,7 +21,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html">PatientDataBook</a>
+    <a class="navbar-brand" href="index.php">PatientDataBook</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,19 +32,19 @@
             <img class="img-thumbnail" src="http://placehold.it/240x200" alt="">
 
           </li>
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="index.php">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.html">
+          <a class="nav-link" href="prescription.php">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Prescriptions</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="report.html">
+          <a class="nav-link" href="reports.php">
             <i class="fa fa-fw fa-area-chart"></i>
             <span class="nav-link-text">Reports</span>
           </a>

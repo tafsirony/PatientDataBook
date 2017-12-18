@@ -273,7 +273,7 @@
                       <div class="form-group">
                           <form name="add_name" id="add_name">
                               <div class="table-responsive">
-                                  <table class="table table-bordered" width="100%" cellspacing="0" id="dynamic_field">
+                                  <table class="table table-bordered"  cellspacing="0" id="dynamic_field">
                                       <tr>
                                           <p>
 
