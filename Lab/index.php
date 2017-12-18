@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
- <meta charset="utf-8">
+
+
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -28,6 +30,7 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -51,14 +54,17 @@
             <span class="nav-link-text">Reports</span>
           </a>
         </li>
+
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.html">
+          <a class="nav-link" href="prescription.php">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Prescriptions</span>
           </a>
         </li>
+		
+		
 		</ul>
-
+	
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
           <a class="nav-link text-center" id="sidenavToggler">
@@ -184,8 +190,7 @@
                 </li>
                 <!-- /.dropdown -->
             </ul>
-			
-   <!-- Breadcrumbs-->
+      <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
@@ -198,73 +203,7 @@
       <!-- Example DataTables Card-->
 	  
 	  
-	  
-	  
-	  <div class="panel-body">
-                            
-                                
-<ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <button type="button" class="btn btn-primary">New Patient</button>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <a href="#">
-                                 <!-- /.row -->
-								 
-								 <div>
-								 
-								 
-								 
-      
-            <div class="row">
-			
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            New Patient Info
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                            <label>User Name</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        <div class="form-group">
-                                            <label>Mail Id</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Age</label>
-                                           <input class="form-control" placeholder="Enter text">
-                                            
-                                        </div>
-										
-							
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
-                                    </form>
-                                </div>
-                    </ul>
-                                
-                            <br>
-							
-							
-
-                            
-                        </div>
-						
+	 
 						
 						
 						
@@ -276,15 +215,15 @@
                         <h3 class="panel-title">Search Patient Id</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
+                        <form role="form" method="post" action="prescription.php">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Patient Id" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="Patient Id" name="email" type="email" method="post" autofocus>
                                 </div>
                                
                                 
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Search</a>
+                                <a href="prescription.php" class="btn btn-lg btn-success btn-block">Search</a>
                             </fieldset>
                         </form>
                     </div>
@@ -309,7 +248,6 @@
         <div class="card-footer small text-muted">Next Appointment in 23 Days with Dr.Shahriar Ruhul</div>
       </div>
     </div>
-	
 	
 	
 	
