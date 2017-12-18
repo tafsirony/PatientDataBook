@@ -166,72 +166,20 @@
                   <tr>
                       <th>Report Name</th>
                       <th>Test Name</th>
-                      <th>Status</th>
                       <th>Normal</th>
                       <th>Abnormal</th>
                       <th>Flag</th>
-                      <th>Units</th>
                       <th>Reference</th>
                       <th>Date</th>
                       <th>Test GIven by</th>
-                      <th>Detail</th>
 
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td>ABC</td>
-                      <td>WBC</td>
-                      <td>D</td>
-                      <td>10</td>
-                      <td>90</td>
-                      <td>G</td>
-                      <td>45ml</td>
-                      <td>JHAS</td>
-                      <td>1/9/2017</td>
-                      <td>Dr.Asok saodj</td>
-                     <td><a href = bloodtest.jpg><button>View</button></td></a>
-
-                  </tr>
-                  <tr>
-                    <td>ABC</td>
-                    <td>WBC</td>
-                    <td>D</td>
-                    <td>10</td>
-                    <td>90</td>
-                    <td>G</td>
-                    <td>45ml</td>
-                    <td>JHAS</td>
-                    <td>1/9/2017</td>
-                    <td>Dr.Asok saodj</td>
-                     <td><a href = bloodtest.jpg><button>View</button></td></a>
-                  </tr>
-                  <tr>
-                    <td>ABC</td>
-                    <td>WBC</td>
-                    <td>D</td>
-                    <td>10</td>
-                    <td>90</td>
-                    <td>G</td>
-                    <td>45ml</td>
-                    <td>JHAS</td>
-                    <td>1/9/2017</td>
-                    <td>Dr.Asok saodj</td>
-                      <td><button>View</button></td>
-                  </tr>
-                  <tr>
-                    <td>ABC</td>
-                    <td>WBC</td>
-                    <td>D</td>
-                    <td>10</td>
-                    <td>90</td>
-                    <td>G</td>
-                    <td>45ml</td>
-                    <td>JHAS</td>
-                    <td>1/9/2017</td>
-                    <td>Dr.Asok saodj</td>
-                      <td><button>View</button></td>
-                  </tr>
+              <?php
+                $email=$_POST['email'];
+                include "getReport.php";
+              ?>
 
 
               </tbody>
