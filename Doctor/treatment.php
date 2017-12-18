@@ -41,7 +41,7 @@
         </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="prescription.html">
+          <a class="nav-link" href="prescription.php">
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text">Prescriptions</span>
           </a>
@@ -196,6 +196,7 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+      </div>
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
@@ -260,81 +261,88 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                     <td><input type="text"></td>
-                  </tr>
+                  <head>
+                      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+                  </head>
+                  <body>
+                  <div class="container">
+                      <br />
+                      <br />
+                      <div class="form-group">
+                          <form name="add_name" id="add_name">
+                              <div class="table-responsive">
+                                  <table class="table table-bordered" width="100%" cellspacing="0" id="dynamic_field">
+                                      <tr>
+                                          <p>
 
-				
-				</tbody>	
-				<div>
-            <legend>Labratory Investigation</legend>
-            <textarea enabled></textarea>
+                                              <button button type="button" name="add" id="add" button" class="btn btn-primary">Add Medicine</button>
+
+                                              <br>
+                                          </p>
+                                      </tr>
+                                  </table>
+                                  <div>
+                                      <legend>Labratory Investigation</legend>
+                                      <textarea enabled></textarea>
+                                  </div>
+                                  <input type="button" name="submit" id="submit" class="btn btn-primary" value="Save" />
+
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  </body>
+
+              </tbody>
+
+
+
+
+
+
+
+    </table></div>
+
+
+
+
+    </div>
+
+      <footer class="sticky-footer">
+          <div class="container">
+              <div class="text-center">
+                  <small>Copyright © DoctorDataBook 2017</small>
+              </div>
           </div>
-										
-                    
+      </footer>
 
- 	  
-
-
-   </table></div>
-<div>		 
-						
-				<p>
-                                
-                                <button type="button" class="btn btn-primary">Add Medicine</button>
-                                
-                            <br>
-
-                            </p>
-							
-							</div>
-							
-	  
-	  
-	  
-							<div class="panel-body">
-                            <p>
-                                
-                                <button type="button" class="btn btn-primary">Save</button>
-                                
-                            <br>
-
-                            </p>
-	  </div>
-	  
-	  
-	  
-	  </div>
-	  
-	  <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © DoctorDataBook 2017</small>
-        </div>
-      </div>
-    </footer>
-	   
 </body>
 
-</html>   
+</html>
+<script>
+    $(document).ready(function(){
+        var i=1;
+        $('#add').click(function(){
+            i++;
+            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="name[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+        });
+        $(document).on('click', '.btn_remove', function(){
+            var button_id = $(this).attr("id");
+            $('#row'+button_id+'').remove();
+        });
+        $('#submit').click(function(){
+            $.ajax({
+                url:"name.php",
+                method:"POST",
+                data:$('#add_name').serialize(),
+                success:function(data)
+                {
+                    alert(data);
+                    $('#add_name')[0].reset();
+                }
+            });
+        });
+    });
+</script>
