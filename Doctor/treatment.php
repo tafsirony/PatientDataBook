@@ -220,34 +220,34 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form">
+                                    <form role="form" method="post" action="idb.php">
                                         <div class="form-group">
                                             <label>Chief Complain</label>
-                                           <input class="form-control" placeholder="Enter text">
+                                           <input class="form-control" placeholder="Enter text" name="complain">
                                             
                                         </div>
                                         <div class="form-group">
                                             <label>Present Illness</label>
-                                            <input class="form-control" placeholder="Enter text">
+                                            <input class="form-control" placeholder="Enter text" name="illness">
                                         </div>
                                         <div class="form-group">
                                             <label>Family History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="fhistory">
                         
                                         </div>
 										<div class="form-group">
                                             <label>Menstrual History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="mhistory">
                         
                                         </div>
                                         <div class="form-group">
                                             <label>Drug History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="dhistory">
                         
                                         </div>
 										<div class="form-group">
                                             <label>Immunization History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="ihistory">
                         
                                         </div>
 
@@ -339,7 +339,7 @@
         var i=1;
         $('#add').click(function(){
             i++;
-            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="name[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="medicine_name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="medicine_quantity[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="medicine_time[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="medicine_timeline[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
         });
         $(document).on('click', '.btn_remove', function(){
             var button_id = $(this).attr("id");

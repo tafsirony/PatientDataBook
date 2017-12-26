@@ -195,8 +195,12 @@
                         </thead>
                         <tbody>
                         <?php
-                        $email="1@1.com";
+                         //include ('gsearch.php');
+                        include 'gsearch.php';
+
                         //include "value.php";
+
+                        $values="$email";
                         //$email=$_POST['email'];
                         include "getReport.php";
                         ?>

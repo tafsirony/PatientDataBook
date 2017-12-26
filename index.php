@@ -63,3 +63,6 @@
 </body>
 
 </html>
+<?php
+    include "csearch.php";
+?>

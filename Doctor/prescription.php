@@ -197,8 +197,6 @@
               <tbody>
 
                                    <?php
-                                     $email=$_POST['email'];
-                                     include "value.php";
                                      include "getPrescription.php";
 
                                        ?>
