@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
 
-                                        session_start();
-?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,6 +44,12 @@
           <a class="nav-link" href="index.php">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="prescription.php">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Prescriptions</span>
           </a>
         </li>
 
@@ -181,75 +184,106 @@
       <div class="card mb-3">
         <div class="card-header">
           <i class="fa fa-table"></i> Prescriptions</div>
-        <div class="card-body">
+<div class="card-body">
           <div class="table-responsive">
-            <table class="table table-bordered" width="100%" cellspacing="0">
+           <a class="scroll-to-top rounded" href="#page-top" style="display: none;">
+      <i class="fa fa-angle-up"></i>
+    </a><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div><table class="table table-bordered" width="100%" cellspacing="0">
               <thead>
-                  <tr>
+                 <tr>
                       <th>Medicine Name</th>
                       <th>Quantity</th>
                       <th>Time</th>
                       <th>Timeline</th>
                   </tr>
               </thead>
-
-
               <tbody>
+              <head>
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+              </head>
+              <body>
+              <div class="container">
+                  <br />
+                  <br />
+                  <div class="form-group">
+                      <form name="add_name" id="add_name">
+                          <div class="table-responsive">
+                              <table class="table table-bordered"  cellspacing="0" id="dynamic_field">
+                                  <tr>
+                                      <p>
 
-                                   <?php
-                                     $email=$_POST['email'];
-                                     include "value.php";
-                                     include "getPrescription.php";
+                                          <button button type="button" name="add" id="add" button" class="btn btn-primary">Add Medicine</button>
 
-                                       ?>
+                                          <br>
+                                      </p>
+
+                                      <input type="button" name="submit" id="submit" class="btn btn-primary" value="Save" />
+                                  </tr>
+                              </table>
+
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              </body>
+
               </tbody>
-
-				<div class="col-lg-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            Patient Description
-                        </div>
-                        <div class="panel-body">
-                            <p>Name : Mr Ruhul Amin </p> <p>Age : 16</p> <p>Address : Dhanmondi</p> <p>Gender : Male</p> <p>Nationality : Bangladeshi</p>
-                        </div>
-                        
-                    </div>
-                </div>
+				
 							
-
-            </table>
-          </div>
-          <div>
-            <legend>Suggestion</legend>
-            <textarea enabled></textarea>
-          </div>
-		  <div class="panel-body">
-                            <p>
-                                
-                                <button type="button" class="btn btn-primary">Save</button>
-                                
-                            <br>
-
-                            </p>
+	  
+	  
+	  
 							
-							<p>
-                                
-                                <a href="NewPrescription.php"><button type="button" class="btn btn-primary">New Prescription</button></a>
-                                
-                            <br>
+				 
+          
+		  
+          
+      
+        
+      
+    
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    
+    <!-- Scroll to Top Button-->
+    
+    <!-- Logout Modal-->
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  
 
-                            </p>
-                        </div>
-          <ul class="pager">
-		  
-		  
-             <li class="previous"><a href="#">Previous</a></li>
-             <li class="next"><a href="#">Next</a></li>
-            </ul>
-      </div>
-        </div>
-      </div>
-    </div>
+
+
+</table></div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
@@ -297,3 +331,28 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function(){
+        var i=1;
+        $('#add').click(function(){
+            i++;
+            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="name[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+        });
+        $(document).on('click', '.btn_remove', function(){
+            var button_id = $(this).attr("id");
+            $('#row'+button_id+'').remove();
+        });
+        $('#submit').click(function(){
+            $.ajax({
+                url:"name.php",
+                method:"POST",
+                data:$('#add_name').serialize(),
+                success:function(data)
+                {
+                    alert(data);
+                    $('#add_name')[0].reset();
+                }
+            });
+        });
+    });
+</script>
