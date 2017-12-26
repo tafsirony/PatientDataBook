@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+ <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <title>DoctorDataBook</title>
+  
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -17,7 +18,22 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
   
-  <!-- Bootstrap Core CSS -->
+  
+	
+	
+<!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
@@ -28,7 +44,8 @@
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  
+
+	
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -220,34 +237,34 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form" method="post" action="idb.php">
+                                    <form role="form">
                                         <div class="form-group">
                                             <label>Chief Complain</label>
-                                           <input class="form-control" placeholder="Enter text" name="complain">
+                                           <input class="form-control" placeholder="Enter text">
                                             
                                         </div>
                                         <div class="form-group">
                                             <label>Present Illness</label>
-                                            <input class="form-control" placeholder="Enter text" name="illness">
+                                            <input class="form-control" placeholder="Enter text">
                                         </div>
                                         <div class="form-group">
                                             <label>Family History</label>
-											<input class="form-control" placeholder="Enter text" name="fhistory">
+											<input class="form-control" placeholder="Enter text">
                         
                                         </div>
 										<div class="form-group">
                                             <label>Menstrual History</label>
-											<input class="form-control" placeholder="Enter text" name="mhistory">
+											<input class="form-control" placeholder="Enter text">
                         
                                         </div>
                                         <div class="form-group">
                                             <label>Drug History</label>
-											<input class="form-control" placeholder="Enter text" name="dhistory">
+											<input class="form-control" placeholder="Enter text">
                         
                                         </div>
 										<div class="form-group">
                                             <label>Immunization History</label>
-											<input class="form-control" placeholder="Enter text" name="ihistory">
+											<input class="form-control" placeholder="Enter text">
                         
                                         </div>
 
@@ -274,11 +291,7 @@
                   </tr>
               </thead>
               <tbody>
-                  <head>
-                      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-                  </head>
+                 
                   <body>
                   <div class="container">
                       <br />
@@ -339,7 +352,7 @@
         var i=1;
         $('#add').click(function(){
             i++;
-            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="medicine_name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="medicine_quantity[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="medicine_time[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="medicine_timeline[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="name[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
         });
         $(document).on('click', '.btn_remove', function(){
             var button_id = $(this).attr("id");
