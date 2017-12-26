@@ -2,18 +2,55 @@
 <html lang="en">
 
 <head>
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <title>DoctorDataBook</title>
-  <!-- Bootstrap core CSS-->
+ <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  
+  <style>
+	.panel-body-report-type{
+		width: 150%;
+		height:150%;
+	}
+  </style>
+	
+	
+<!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-3.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -31,6 +68,7 @@
               <span class="nav-link-text">Dashboard</span>
             </a>
           </li>
+		  
           
 
           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
@@ -156,6 +194,9 @@
         <li class="breadcrumb-item active">Reports</li>
       </ol>
       <!-- Area Chart Example-->
+	  
+	  
+	  
       <div class="card mb-3" >
         <div class="card-header">
           <i class="fa fa-table"></i> Reports</div>
@@ -176,6 +217,31 @@
                   </tr>
               </thead>
               <tbody>
+			  
+			  <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Patient Description
+                        </div>
+                        <div class="panel-body">
+                            <p>Name : Mr Ruhul Amin </p> <p>Age : 16</p> <p>Address : Dhanmondi</p> <p>Gender : Male</p> <p>Nationality : Bangladeshi</p>
+                        </div>
+                        
+                    </div>
+                </div>
+				
+				<div class="col-lg-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Date Information
+                        </div>
+                        <div class="panel-body">
+                            <p>Date :  </p> <p>Time : </p>
+                        </div>
+                        
+                    </div>
+                </div>
+			  
               <?php
                 $email=$_POST['email'];
                 include "getReport.php";
@@ -186,19 +252,63 @@
             </table>
           </div>
 		  
-		  </tbody>
-            </table>
+		  
           </div>
-          
-		  <div class="panel-body">
+		  
+		  <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <button type="button" class="btn btn-primary">New Report</button>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                 <!-- /.row -->
+								 
+								 <div>
+								 
+								 
+								 
+      
+            <div class="row">
+			
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            New Reprt Type
+                        </div>
+						<div class="panel-body-report-type">
                             <p>
                                 
-                                <a href="wbc.php"><button type="button" class="btn btn-primary">Add New Report</button>
+                                <a href="wbc.php"><button type="button" class="btn btn-primary">Add New Blood Test</button></a>
                                  
-                            <br>
+                            
 
                             </p>
+							
+							<p>
+                                
+                                <a href="urine.php"><button type="button" class="btn btn-primary">Add New Urine Test</button></a>
+                                 
+                            
+
+                            </p>
+							
+							<p>
+                                
+                                <a href=""><button type="button" class="btn btn-primary">Add Other Test</button></a>
+                                 
+                            
+
+                            </p>
+							
                         </div>
+						</ul>
+						</ul>
+                        
+						
+          
+		  
 		  
 		  
 
