@@ -252,7 +252,8 @@
                                             <input class="form-control" placeholder="Drug History" name="dhistory" type="name" method="post" autofocus>
                                             <label>Immunization History</label>
                                             <input class="form-control" placeholder="Immunization History" name="ihistory" type="name" method="post" autofocus>
-
+                                                <label>Laboratory Investigation</label>
+                                                <input class="form-control" placeholder="Laboratory Investigation" name="lab" type="name" method="post" autofocus>
                                             <a href="idb.php" ><input type="submit" class="btn btn-primary"></a>
                                             </fieldset>
 
@@ -305,11 +306,8 @@
                                 </p>
                             </tr>
                         </table>
-                        <div>
-                            <legend>Labratory Investigation</legend>
-                            <textarea enabled></textarea>
-                        </div>
-                        <a href="idb.php"><input type="button" name="submit" id="submit" class="btn btn-primary" value="Save" /></a>
+
+                        <input type="button" name="submit" id="submit" class="btn btn-primary" value="Submit" />
 
                     </div>
                 </form>
@@ -349,7 +347,11 @@
         var i=1;
         $('#add').click(function(){
             i++;
-            $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Medicine Name" class="form-control name_list" /><td><input type="text" name="name[]" placeholder="Quantity" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Time" class="form-control name_list" /></td><td><input type="text" name="name[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+            $('#dynamic_field').append('<tr id="row'+i+'">' +
+                '<td><input type="text" name="name" placeholder="Medicine Name" class="form-control name_list" />' +
+                '<td><input type="text" name="quantity[]" placeholder="Quantity" class="form-control name_list" /></td>' +
+                '<td><input type="text" name="time[]" placeholder="Time" class="form-control name_list" /></td>' +
+                '<td><input type="text" name="timeline[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
         });
         $(document).on('click', '.btn_remove', function(){
             var button_id = $(this).attr("id");
@@ -357,7 +359,7 @@
         });
         $('#submit').click(function(){
             $.ajax({
-                url:"name.php",
+                url:"aMedicine.php",
                 method:"POST",
                 data:$('#add_name').serialize(),
                 success:function(data)
