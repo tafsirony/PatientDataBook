@@ -237,34 +237,34 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form">
+                                    <form role="form" method="post">
                                         <div class="form-group">
                                             <label>Chief Complain</label>
-                                           <input class="form-control" placeholder="Enter text">
+                                           <input class="form-control" placeholder="Enter text" name="complain">
                                             
                                         </div>
                                         <div class="form-group">
                                             <label>Present Illness</label>
-                                            <input class="form-control" placeholder="Enter text">
+                                            <input class="form-control" placeholder="Enter text" name="illness">
                                         </div>
                                         <div class="form-group">
                                             <label>Family History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="fhistory">
                         
                                         </div>
 										<div class="form-group">
                                             <label>Menstrual History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="mhistory">
                         
                                         </div>
                                         <div class="form-group">
                                             <label>Drug History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="dhistory">
                         
                                         </div>
 										<div class="form-group">
                                             <label>Immunization History</label>
-											<input class="form-control" placeholder="Enter text">
+											<input class="form-control" placeholder="Enter text" name="ihistory">
                         
                                         </div>
 

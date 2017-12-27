@@ -45,7 +45,8 @@ function getData($conn,$sql)
             }
 
         } else {
-            echo "<script>alert('wrong patient'); location.href='index.php';</script>";
+            echo "Wrong patient";
+            //echo "<script>alert('wrong patient'); location.href='index.php';</script>";
         }
         mysqli_close($conn);
 }

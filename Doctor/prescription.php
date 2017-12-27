@@ -208,7 +208,9 @@
                             Patient Description
                         </div>
                         <div class="panel-body">
-                            <p>Name : Mr Ruhul Amin </p> <p>Age : 16</p> <p>Address : Dhanmondi</p> <p>Gender : Male</p> <p>Nationality : Bangladeshi</p>
+                            <?php
+                                include "getPatientinfo.php";
+                            ?>
                         </div>
                         
                     </div>
