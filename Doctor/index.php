@@ -307,7 +307,7 @@
 						
 						
 						
-						 <div class="container">
+		<div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
@@ -320,8 +320,6 @@
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Patient Id" name="email" type="email" method="post" autofocus>
                                 </div>
-                               
-                                
                                 <!-- Change this to a button or input when using this as a form -->
                                 <a href="sdb.php" class="btn btn-lg btn-success btn-block">Search</a>
                             </fieldset>

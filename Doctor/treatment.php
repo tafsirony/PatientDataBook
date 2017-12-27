@@ -237,42 +237,31 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form" method="post">
+                                    <form role="form" method="post" action="idb.php">
                                         <div class="form-group">
+                                            <fieldset>
                                             <label>Chief Complain</label>
-                                           <input class="form-control" placeholder="Enter text" name="complain">
-                                            
-                                        </div>
-                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Chief Complain" name="complain" type="name" method="post" autofocus>
                                             <label>Present Illness</label>
-                                            <input class="form-control" placeholder="Enter text" name="illness">
-                                        </div>
-                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Present Illness" name="illness" type="name" method="post" autofocus>
                                             <label>Family History</label>
-											<input class="form-control" placeholder="Enter text" name="fhistory">
-                        
-                                        </div>
-										<div class="form-group">
+                                            <input class="form-control" placeholder="Family History" name="fhistory" type="name" method="post" autofocus>
                                             <label>Menstrual History</label>
-											<input class="form-control" placeholder="Enter text" name="mhistory">
-                        
-                                        </div>
-                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Menstrual History" name="mhistory" type="name" method="post" autofocus>
                                             <label>Drug History</label>
-											<input class="form-control" placeholder="Enter text" name="dhistory">
-                        
-                                        </div>
-										<div class="form-group">
+                                            <input class="form-control" placeholder="Drug History" name="dhistory" type="name" method="post" autofocus>
                                             <label>Immunization History</label>
-											<input class="form-control" placeholder="Enter text" name="ihistory">
-                        
-                                        </div>
+                                            <input class="form-control" placeholder="Immunization History" name="ihistory" type="name" method="post" autofocus>
+
+                                            <a href="idb.php" ><input type="submit" class="btn btn-primary"></a>
+                                            </fieldset>
+
 
 </form></div>
 </div>
-</div>			
-</div>							
-				</div>		
+</div>
+</div>
+				</div>
 </div>
 
 
@@ -293,35 +282,42 @@
               <tbody>
                  
                   <body>
-                  <div class="container">
-                      <br />
-                      <br />
-                      <div class="form-group">
-                          <form name="add_name" id="add_name">
-                              <div class="table-responsive">
-                                  <table class="table table-bordered"  cellspacing="0" id="dynamic_field">
-                                      <tr>
-                                          <p>
+        <tbody>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        </head>
+        <body>
+        <div class="container">
+            <br />
+            <br />
+            <div class="form-group">
+                <form name="add_name" id="add_name">
+                    <div class="table-responsive">
+                        <table class="table table-bordered"  cellspacing="0" id="dynamic_field">
+                            <tr>
+                                <p>
 
-                                              <button button type="button" name="add" id="add" button" class="btn btn-primary">Add Medicine</button>
+                                    <button button type="button" name="add" id="add" button" class="btn btn-primary">Add Medicine</button>
 
-                                              <br>
-                                          </p>
-                                      </tr>
-                                  </table>
-                                  <div>
-                                      <legend>Labratory Investigation</legend>
-                                      <textarea enabled></textarea>
-                                  </div>
-                                  <input type="button" name="submit" id="submit" class="btn btn-primary" value="Save" />
+                                    <br>
+                                </p>
+                            </tr>
+                        </table>
+                        <div>
+                            <legend>Labratory Investigation</legend>
+                            <textarea enabled></textarea>
+                        </div>
+                        <a href="idb.php"><input type="button" name="submit" id="submit" class="btn btn-primary" value="Save" /></a>
 
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-                  </body>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </body>
 
-              </tbody>
+        </tbody>
 
 
 
@@ -330,6 +326,7 @@
 
 
     </table></div>
+
 
 
 
