@@ -17,9 +17,9 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-  
-  
-	
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js"></script>
 	
 <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -348,24 +348,49 @@
         $('#add').click(function(){
             i++;
             $('#dynamic_field').append('<tr id="row'+i+'">' +
-                '<td><input type="text" name="name" placeholder="Medicine Name" class="form-control name_list" />' +
+                '<td><input type="text" name="name[]" placeholder="Medicine Name" class="form-control name_list" /></td>' +
                 '<td><input type="text" name="quantity[]" placeholder="Quantity" class="form-control name_list" /></td>' +
                 '<td><input type="text" name="time[]" placeholder="Time" class="form-control name_list" /></td>' +
-                '<td><input type="text" name="timeline[]" placeholder="Timeline" class="form-control name_list" /></td></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+                '<td><input type="text" name="timeline[]" placeholder="Timeline" class="form-control name_list" /></td>' +
+                '<td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
         });
         $(document).on('click', '.btn_remove', function(){
             var button_id = $(this).attr("id");
             $('#row'+button_id+'').remove();
         });
         $('#submit').click(function(){
+
+            var Datas=new Array();
+
+            var cnt=0;
+            $('tr:has(td)').each(function() {
+
+                var name=$(this).find('td input').eq(0).val();
+                var quantity=$(this).find('td input').eq(1).val();
+                var time=$(this).find('td input').eq(2).val();
+                var timeline=$(this).find('td input').eq(3).val();
+
+
+                Datas[cnt]={
+                    "name" : name
+                    , "quantity" :quantity
+                    , "time" : time
+                    , "timeline" : timeline
+                }
+                cnt++;
+            });
+            //TableData.shift();  // first row will be empty - so remove
+
+            var Txx;
+            Txx = JSON.stringify(Datas);
+            alert(Txx);
             $.ajax({
-                url:"aMedicine.php",
-                method:"POST",
-                data:$('#add_name').serialize(),
-                success:function(data)
-                {
-                    alert(data);
-                    $('#add_name')[0].reset();
+                type: "POST",
+                url: "aMedicine.php",
+                data: "pTableData=" + Txx,
+                success: function(msg){
+                    // return value stored in msg variable
+                    alert(msg);
                 }
             });
         });

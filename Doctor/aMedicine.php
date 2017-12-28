@@ -1,6 +1,28 @@
 <?php
 $connect = mysqli_connect("localhost", "root", "", "Doctor_Patient");
-$number = count($_POST["row"]);
+//$number = count($_POST["row"]);
+// Unescape the string values in the JSON array
+$tableData = stripcslashes($_POST['pTableData']);
+
+// Decode the JSON array
+$tableData = json_decode($tableData,TRUE);
+// now $tableData can be accessed like a PHP array
+//echo $tableData[0]['name'];
+$elementCount  = count($tableData);
+    for($i=0;$i<$elementCount;$i++)
+    {
+        $name=$tableData[$i]['name'];
+        $quantity=$tableData[$i]['quantity'];
+        $time=$tableData[$i]['time'];
+        $timeline=$tableData[$i]['timeline'];
+        $sql = "INSERT INTO medicine(Pr_Id, M_Name, M_Quantity, M_Time, M_Timeline) VALUES('0',$name,$quantity,$time,$timeline)";
+        $result=mysqli_query($connect, $sql);
+        if($result){
+            echo "success";
+        }else{
+            echo "error";
+        }
+    }
 //echo $_POST['row'];
 /*if($number > 0)
 {
