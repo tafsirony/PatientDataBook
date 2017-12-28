@@ -197,7 +197,7 @@
               </thead>
               <tbody>
                 <?php
-                $email="1@1.com";
+                $email="ruhul20@gmail.com";
                 //include "value.php";
                 //$email=$_POST['email'];
                 include "getReport.php";

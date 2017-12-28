@@ -6,8 +6,11 @@ $username = "root";
 $password = "";
 $dbname = "Doctor_Patient";
 $conn = new mysqli($servername, $username, $password, $dbname);
-$email=$_GET['email'];
-$pass=$_GET['password'];
+//$email=$_GET['email'];
+//$pass=$_GET['password'];
+global $email;
+$email="ruhul20@gmail.com";
+$pass=1234;
 $sql = "SELECT D_Mail_Id,D_Password FROM doctor";
 getData($conn,$sql,1);
 $sql = "SELECT P_Mail_Id,P_Password FROM patient";
@@ -26,6 +29,8 @@ function getData($conn,$sql,$value)
     {
         $check_username=$row['D_Mail_Id'];
         $check_password=$row['D_Password'];
+        $email="ruhul20@gmail.com";
+        $pass=1234;
             if($email == $check_username && $pass == $check_password && $value==1){
         		mysqli_close($conn);
                 header ('location: Doctor/index.php');

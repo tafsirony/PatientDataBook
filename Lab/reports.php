@@ -224,7 +224,9 @@
                             Patient Description
                         </div>
                         <div class="panel-body">
-                            <p>Name : Mr Ruhul Amin </p> <p>Age : 16</p> <p>Address : Dhanmondi</p> <p>Gender : Male</p> <p>Nationality : Bangladeshi</p>
+                            <?php
+                            include "getPatientinfo.php";
+                            ?>
                         </div>
                         
                     </div>
@@ -235,8 +237,17 @@
                         <div class="panel-heading">
                             Date Information
                         </div>
-                        <div class="panel-body">
-                            <p>Date :  </p> <p>Time : </p>
+                            <p>Date :
+                                <?php
+                                echo date("Y-m-d");
+                                ?>
+                            </p>
+                            <p>Time :
+                                <?php
+                                echo date("h:i:sa");
+                                ?>
+
+                            </p>
                         </div>
                         
                     </div>

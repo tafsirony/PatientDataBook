@@ -56,7 +56,14 @@
             <span class="nav-link-text">Reports</span>
           </a>
         </li>
-		
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+              <a class="nav-link" href="prescription.php">
+                  <i class="fa fa-fw fa-area-chart"></i>
+                  <span class="nav-link-text">Prescription</span>
+              </a>
+          </li>
+
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="treatment.php">
             <i class="fa fa-fw fa-table"></i>
@@ -212,17 +219,26 @@
                                 include "getPatientinfo.php";
                             ?>
                         </div>
-                        
+
                     </div>
                 </div>
-							
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Suggestion
+                        </div>
+                        <div class="panel-body">
+                            <?php
+                                include "getSuggestion.php";
+                            ?>
+                        </div>
+
+                    </div>
+                </div>
 
             </table>
           </div>
-          <div>
-            <legend>Suggestion</legend>
-            <textarea enabled></textarea>
-          </div>
+
 		  <div class="panel-body">
                             <p>
                                 

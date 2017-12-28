@@ -194,7 +194,7 @@
 
                 <?php
                 //$email=$_POST['email'];
-                $email="1@1.com";
+                $email="ruhul20@gmail.com";
                 include "getPrescription.php";
 
                 ?>

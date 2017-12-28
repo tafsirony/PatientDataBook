@@ -16,7 +16,7 @@ $elementCount  = count($tableData);
         $quantity=$tableData[$i]['quantity'];
         $time=$tableData[$i]['time'];
         $timeline=$tableData[$i]['timeline'];
-        $sql = "INSERT INTO medicine(Pr_Id, M_Name, M_Quantity, M_Time, M_Timeline) VALUES('0','$name','$quantity','$time','$timeline')";
+        $sql = "INSERT INTO medicine(Pr_Id, M_Name, M_Quantity, M_Time, M_Timeline) VALUES('0',$name,$quantity,$time,$timeline)";
         $result=mysqli_query($connect, $sql);
         if($result){
             echo "success";

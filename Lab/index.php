@@ -210,35 +210,33 @@
 	  
       
       <!-- Example DataTables Card-->
-	  
-	  
-	 
-						
-						
-						
-						 <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Search Patient Id</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form role="form" method="post" action="reports.php">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Patient Id" name="email" type="email" method="post" autofocus>
-                                </div>
-                               
-                                
-                                <!-- Change this to a button or input when using this as a form -->
-                                <a href="reports.php" class="btn btn-lg btn-success btn-block">Search</a>
-                            </fieldset>
-                        </form>
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-panel panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Search Patient Id</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form" method="post" action="sdb.php">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Patient Id" name="email" type="email" method="post" autofocus>
+                                    </div>
+                                    <!-- Change this to a button or input when using this as a form -->
+                                    <a href="sdb.php" class="btn btn-lg btn-success btn-block">Search</a>
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 						
 						
 						
